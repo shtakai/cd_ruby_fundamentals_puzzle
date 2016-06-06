@@ -12,3 +12,10 @@ def arr_include_gt_10(arr)
 end
 pp arr_include_gt_10(sample_array)
 
+pp 'create an name array '
+name_array = %w/John  KB  Oliver  Cory  Matthew  Christopher/
+pp name_array
+name_array.shuffle.each{|name| pp name}
+pp name_array.select{|name| name.size > 5}
+
+
