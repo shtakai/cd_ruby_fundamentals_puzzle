@@ -28,3 +28,11 @@ pp 'generate an array with 10 random numbers bet 55-100'
 random_array = 10.times.map{(55..100).to_a.sample}
 pp random_array
 pp "sort:#{random_array.sort} min:#{random_array.min} max:#{random_array.max}"
+
+pp 'create a random string'
+random_string = 5.times.map{(65 + rand(26)).chr }.join
+pp random_string
+
+pp 'create an array w/10 random strs each 5 chars long'
+random_string_array = 10.times.map{ 5.times.map{(65 + rand(26)).chr}.join }
+pp random_string_array
