@@ -25,4 +25,6 @@ pp shuffled_letter_array.last
 pp ([shuffled_letter_array.first] - %w/a i u e o/).none? ? "MESSAGE :#{shuffled_letter_array.first}" : shuffled_letter_array.first
 
 pp 'generate an array with 10 random numbers bet 55-100'
-pp 5.times.map{(55..100).to_a.sample}
+random_array = 10.times.map{(55..100).to_a.sample}
+pp random_array
+pp "sort:#{random_array.sort} min:#{random_array.min} max:#{random_array.max}"
