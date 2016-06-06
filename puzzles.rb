@@ -18,4 +18,8 @@ pp name_array
 name_array.shuffle.each{|name| pp name}
 pp name_array.select{|name| name.size > 5}
 
-
+pp 'create a-z array'
+letter_array = ('a'..'z').to_a
+shuffled_letter_array = letter_array.shuffle
+pp shuffled_letter_array.last
+pp ([shuffled_letter_array.first] - %w/a i u e o/).none? ? "MESSAGE :#{shuffled_letter_array.first}" : shuffled_letter_array.first
